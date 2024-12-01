@@ -7,7 +7,7 @@ service:
   port: 8010
   type: ClusterIP
 
-namespace: default
+namespace: dev
 
 configmap:
   name: sensor-app-configmap-v1
