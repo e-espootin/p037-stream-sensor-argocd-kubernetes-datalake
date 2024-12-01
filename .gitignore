@@ -1,0 +1,8 @@
+.venv
+
+#
+sensor-app/.venv
+sensor-app/.my_commands.sh
+
+sensor-app-v2/.venv-sensorv2
+sensor-app-v2/.my_commands.sh

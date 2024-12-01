@@ -1,0 +1,15 @@
+
+appName: sensor-app
+
+port: 80
+
+namespace: default
+
+configmap:
+  name: sensor-app-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
+image:
+  name: e4espootin/sensor-app
+  tag: latest

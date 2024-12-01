@@ -1,0 +1,8 @@
+requests==2.32.3
+kafka-python-ng==2.2.3 # works finally
+#kafka-python==2.0.2
+#logging#==0.4.9.6
+#kafka
+#kafka.admin
+#kafka.errors
+
