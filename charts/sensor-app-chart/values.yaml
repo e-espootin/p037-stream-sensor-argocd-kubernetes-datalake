@@ -1,7 +1,11 @@
 
 appName: sensor-app
 
-port: 80
+port: 9009
+
+service:
+  port: 8010
+  type: ClusterIP
 
 namespace: default
 
@@ -11,5 +15,5 @@ configmap:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
-  name: e4espootin/sensor-app
+  name: e4espootin/sensor-app-v2
   tag: latest
