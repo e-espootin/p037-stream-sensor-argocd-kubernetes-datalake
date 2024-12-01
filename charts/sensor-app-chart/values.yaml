@@ -9,6 +9,9 @@ service:
 
 namespace: dev
 
+deployment:
+  replicas: 2
+  
 configmap:
   name: sensor-app-configmap-v1
   data:
