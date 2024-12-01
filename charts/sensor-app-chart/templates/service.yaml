@@ -14,3 +14,5 @@ spec:
     app: {{ .Values.appName }}
     tier: frontend
   type: LoadBalancer
+
+  
