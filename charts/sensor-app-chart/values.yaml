@@ -10,7 +10,7 @@ service:
 namespace: dev
 
 deployment:
-  replicas: 2
+  replicas: 4
   
 configmap:
   name: sensor-app-configmap-v2

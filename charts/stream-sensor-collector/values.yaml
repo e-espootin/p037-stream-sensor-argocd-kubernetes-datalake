@@ -10,7 +10,7 @@ service:
 namespace: dev
 
 deployment:
-  replicas: 1
+  replicas: 2
   
 configmap:
   name: stream-sensor-collector-configmap
