@@ -1,11 +1,11 @@
 
 appName: stream-sensor-collector
 
-# port: 9009
+port: 9601
 
-# service:
-#   port: 8010
-#   type: ClusterIP
+service:
+  port: 9602
+  type: ClusterIP
 
 namespace: dev
 
