@@ -7,9 +7,10 @@ from typing import Dict, Any
 
 class OpenWeatherMapAPIClass:
     def __init__(self):
-        #self.api_key = os.getenv('openweathermap_api_key')
-        # TODO: Replace api key from secrets
-        self.api_key = "x"#Variable.get('openweathermap_api_key')
+    
+        # Access secrets from environment variables
+        self.openweathermap_api_key = os.getenv("KEY")
+        self.api_key = self.openweathermap_api_key#Variable.get('openweathermap_api_key')
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
 
     def get_weather_data(self, city_name: str) -> Dict[str, Any]:

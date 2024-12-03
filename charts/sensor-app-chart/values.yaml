@@ -13,10 +13,14 @@ deployment:
   replicas: 2
   
 configmap:
-  name: sensor-app-configmap-v1
+  name: sensor-app-configmap-v2
   data:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
   name: e4espootin/sensor-app-v2
   tag: latest
+
+secret:
+  Apikey: KEY
+  secret_config_name: apikey-openweathermap

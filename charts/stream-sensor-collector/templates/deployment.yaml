@@ -18,7 +18,7 @@ spec:
         tier: frontend
     spec: # Pod spec
       containers:
-      - name: mycontainer
+      - name: stream-sensor-collector
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
         env: # Pass secret values as environment variables
         - name: {{ .Values.secret.secret_id }}
