@@ -4,7 +4,7 @@ from fastapi import FastAPI
 import requests
 
 app = FastAPI()
-API_KEY = "bd8b3dce0a905f2df4bcdcbf7a34618d"
+API_KEY = "x"
 
 @app.get("/")
 def read_root():

@@ -14,6 +14,14 @@ argocd/github-secret.yaml
 # stream-sensor-collector
 stream-sensor-collector/.venv-stream-collector/
 stream-sensor-collector/.my_commands.sh
+stream-sensor-collector/scripts/__pycache__/
+
+# weather-api
+weather-api/.venv/
+weather-api/__pycache__
+
+#argocd path
+argocd/.my_commands.sh
 
 # secrets
 .secrets/
