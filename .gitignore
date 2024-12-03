@@ -1,10 +1,19 @@
 .venv
 
-#
+#sensor-app
 sensor-app/.venv
 sensor-app/.my_commands.sh
 
+#sensor-app-v2
 sensor-app-v2/.venv-sensorv2
 sensor-app-v2/.my_commands.sh
 
 argocd/github-secret.yaml
+
+
+# stream-sensor-collector
+stream-sensor-collector/.venv-stream-collector
+stream-sensor-collector/.my_commands.sh
+
+# secrets
+.secrets/*
