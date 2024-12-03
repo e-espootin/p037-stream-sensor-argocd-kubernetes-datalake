@@ -1,0 +1,27 @@
+
+appName: stream-sensor-collector
+
+# port: 9009
+
+# service:
+#   port: 8010
+#   type: ClusterIP
+
+namespace: dev
+
+deployment:
+  replicas: 1
+  
+configmap:
+  name: stream-sensor-collector-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
+image:
+  name: e4espootin/stream-sensor-collector-v1
+  tag: latest
+
+secret:
+  secret_id: AWS_ACCESS_KEY_ID
+  secret_key: AWS_SECRET_ACCESS_KEY
+  secret_config_name: aws-s3-secret-etlop

@@ -10,7 +10,8 @@ docker push e4espootin/sensor-app-v2
 
 
 
-
+# docker run
+docker run -it --rm -d --network host --name sensor-app-v2 e4espootin/sensor-app-v2 
 # python run
 python main.py --broker 192.168.0.108 --port 9092
 
