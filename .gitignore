@@ -12,8 +12,11 @@ argocd/github-secret.yaml
 
 
 # stream-sensor-collector
-stream-sensor-collector/.venv-stream-collector
+stream-sensor-collector/.venv-stream-collector/
 stream-sensor-collector/.my_commands.sh
 
 # secrets
-.secrets/*
+.secrets/
+
+
+.*
