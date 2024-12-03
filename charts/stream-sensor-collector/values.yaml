@@ -13,12 +13,12 @@ deployment:
   replicas: 1
   
 configmap:
-  name: stream-sensor-collector-configmap-v1
+  name: stream-sensor-collector-configmap
   data:
     CUSTOM_HEADER: 'This app was deployed with helm!'
 
 image:
-  name: e4espootin/stream-sensor-collector-v1
+  name: e4espootin/stream-sensor-collector
   tag: latest
 
 secret:
