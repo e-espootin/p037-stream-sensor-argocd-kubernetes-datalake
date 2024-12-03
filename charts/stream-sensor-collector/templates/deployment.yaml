@@ -21,16 +21,16 @@ spec:
       - name: mycontainer
         image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
         env: # Pass secret values as environment variables
-        - name: {{ .Values.secret.AWS_ACCESS_KEY_ID }}
+        - name: {{ .Values.secret.secret_id }}
           valueFrom:
             secretKeyRef:
-              name: {{ .Values.secret.aws-s3-secret-etlop }}
-              key: {{ .Values.secret.AWS_ACCESS_KEY_ID }}
-        - name: {{ .Values.secret.AWS_SECRET_ACCESS_KEY }}
+              name: {{ .Values.secret.secret_config_name }}
+              key: {{ .Values.secret.secret_id }}
+        - name: {{ .Values.secret.secret_key }}
           valueFrom:
             secretKeyRef:
-              name: {{ .Values.secret.aws-s3-secret-etlop }}
-              key: {{ .Values.secret.AWS_SECRET_ACCESS_KEY }}
+              name: {{ .Values.secret.secret_config_name }}
+              key: {{ .Values.secret.secret_key }}
         ports:
         - containerPort: {{ .Values.port }}
         envFrom:
