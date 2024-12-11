@@ -17,7 +17,11 @@ stream-sensor-collector/.venv-stream-collector/
 stream-sensor-collector/.my_commands.sh
 stream-sensor-collector/scripts/__pycache__/
 
+# flask-weather-app
+flask-weather-app
+
 # weather-api
+weather-api
 weather-api/.venv/
 weather-api/__pycache__
 
