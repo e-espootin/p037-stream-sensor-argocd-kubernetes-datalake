@@ -77,12 +77,7 @@ def main():
             print(f"Waiting for {interval_sec} seconds...")
             time.sleep(interval_sec)
        
-        # while(True):
-            
-        #     # wait for interval
-        #     print(f"Waiting for {interval_sec} seconds...")
-        #     time.sleep(60)
-
+       
       
 
 
